@@ -1,0 +1,178 @@
+@page "/my-info"
+
+<div class="column-layout my-info-container">
+    <div class="column-layout page-content">
+        <div class="row-layout header">
+            <div class="row-layout group">
+                <div class="row-layout group_1">
+                    <img src="assets/Avatar6.png" class="image" />
+                </div>
+                <div class="column-layout group_2">
+                    <div class="column-layout group_3">
+                        <h4 class="content_1">
+                            Erin Brockovich
+                        </h4>
+                        <p class="typography__subtitle-1 content_1">
+                            Water Quality Specialist
+                        </p>
+                    </div>
+                    <div class="row-layout group_4">
+                        <IgbButton Variant="ButtonVariant.Flat" class="user-input user-input_1" my-info-scope>
+                            personal
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                        <IgbButton Variant="ButtonVariant.Flat" class="user-input user-input_2" my-info-scope>
+                            job
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                        <IgbButton Variant="ButtonVariant.Flat" class="user-input user-input_3" my-info-scope>
+                            time-off
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                        <IgbButton Variant="ButtonVariant.Flat" class="user-input user-input_4" my-info-scope>
+                            emergency
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                        <IgbButton Variant="ButtonVariant.Flat" class="user-input user-input_5" my-info-scope>
+                            documents
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                        <IgbButton Variant="ButtonVariant.Flat" class="user-input user-input_6" my-info-scope>
+                            benefits
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                        <IgbButton Variant="ButtonVariant.Flat" class="user-input user-input_7" my-info-scope>
+                            pay info
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-layout content">
+            <div class="row-layout group_5">
+                <div class="column-layout group_6">
+                    <div class="column-layout group_7">
+                        <p class="typography__subtitle-2 text">
+                            Hire Date
+                        </p>
+                        <p class="typography__body-2 text_1">
+                            Feb 01, 2010
+                        </p>
+                        <p class="typography__caption text_1">
+                            10y-10m-7d
+                        </p>
+                    </div>
+                    <div class="column-layout group_8">
+                        <div class="row-layout group_9">
+                            <span class="material-icons icon">
+                                waves
+                            </span>
+                            <p class="typography__body-2 content_2">
+                                Waste water mgmt.
+                            </p>
+                        </div>
+                        <div class="row-layout group_9">
+                            <span class="material-icons icon">
+                                domain
+                            </span>
+                            <p class="typography__body-2 content_2">
+                                Nuclear Disposal
+                            </p>
+                        </div>
+                        <div class="row-layout group_9">
+                            <span class="material-icons icon">
+                                location_on
+                            </span>
+                            <p class="typography__body-2 content_2">
+                                California, USA
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column-layout group_10">
+                        <p class="typography__subtitle-2 text">
+                            Manager
+                        </p>
+                        <div class="row-layout group_11">
+                            <IgbAvatar Src="assets/Avatar1.png" Shape="AvatarShape.Circle" class="avatar" my-info-scope></IgbAvatar>
+                            <p class="typography__body-2 content_2">
+                                Donni Darko
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-layout group_12">
+                    <div class="row-layout group_13">
+                        <span class="material-icons icon_1">
+                            perm_contact_calendar
+                        </span>
+                        <h6 class="content_2">
+                            Personal
+                        </h6>
+                    </div>
+                    <p class="typography__subtitle-1 text_1">
+                        Basic Information
+                    </p>
+                    <div class="row-layout group_14">
+                        <IgbInput @bind-value="value" Label="First name" Disabled="true" Outlined="true" class="user-input" my-info-scope></IgbInput>
+                        <IgbInput @bind-value="value1" Label="Middle name" Disabled="true" Outlined="true" class="user-input" my-info-scope></IgbInput>
+                        <IgbInput @bind-value="value2" Label="Last name" Disabled="true" Outlined="true" class="user-input" my-info-scope></IgbInput>
+                    </div>
+                    <div class="row-layout group_14">
+                        <span class="user-input">Select not yet available in Blazor</span>
+                        <span class="user-input">Select not yet available in Blazor</span>
+                    </div>
+                    <div class="row-layout group_15">
+                        <IgbInput @bind-value="value3" Label="Address" Required="true" Outlined="true" class="input" my-info-scope></IgbInput>
+                    </div>
+                    <div class="row-layout group_16">
+                        <IgbInput @bind-value="value4" Label="City" Required="true" Outlined="true" class="user-input" my-info-scope></IgbInput>
+                        <IgbInput @bind-value="value5" Label="State" Required="true" Outlined="true" class="input_1" my-info-scope></IgbInput>
+                        <IgbInput DisplayType="InputType.Number" @bind-value="value6" Label="Zip/Postal Code" Required="true" Outlined="true" class="user-input" my-info-scope></IgbInput>
+                    </div>
+                    <p class="typography__subtitle-1 text_1">
+                        Contact
+                    </p>
+                    <div class="row-layout group_17">
+                        <IgbInput DisplayType="InputType.Tel" Label="Home phone" Outlined="true" class="user-input" my-info-scope>
+                            <span slot="prefix">
+                                <span class="material-icons icon_2">
+                                    home
+                                </span>
+                            </span>
+                        </IgbInput>
+                        <IgbInput DisplayType="InputType.Tel" Label="Work phone" Outlined="true" class="user-input" my-info-scope>
+                            <span slot="prefix">
+                                <span class="material-icons icon_2">
+                                    domain
+                                </span>
+                            </span>
+                        </IgbInput>
+                        <IgbInput DisplayType="InputType.Tel" Label="Mobile phone" Outlined="true" class="user-input" my-info-scope>
+                            <span slot="prefix">
+                                <span class="material-icons icon_2">
+                                    person
+                                </span>
+                            </span>
+                        </IgbInput>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-layout footer">
+            <p class="typography__body-2 text_2">
+                (c) 2020 IndigoDesign Inc.
+            </p>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string value = "Erin";
+    private string value1 = "First name";
+    private string value2 = "Brockovich";
+    private string value3 = "123 Wallaby Lane";
+    private string value4 = "Scramento";
+    private string value5 = "CA";
+    private string value6 = "94203";
+}
